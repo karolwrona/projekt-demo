@@ -44,8 +44,5 @@ public class SelectedColorController {
     public String statPage(){
         return"stat";
     }
-    @GetMapping("/data")
-    public String dataPage(){
-        return"data";
-    }
+
 }
