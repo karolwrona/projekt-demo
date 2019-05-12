@@ -17,7 +17,7 @@ public class DataController {
     @GetMapping("/data")
     public String dataPage(Model model){
         Iterable<SelectedColor> selectedColors = selectedColorDao.findAll();
-        model.addAttribute("colors", selectedColors);
+        model.addAttribute("selectedColors", selectedColors);
         model.addAttribute("title", title);
         return"data";
     }
