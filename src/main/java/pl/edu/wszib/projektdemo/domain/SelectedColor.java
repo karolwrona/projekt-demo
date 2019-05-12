@@ -16,8 +16,7 @@ public class SelectedColor {
 
     }
 
-    public SelectedColor(Integer id, String color, Date ctime) {
-        this.id = id;
+    public SelectedColor(String color, Date ctime) {
         this.color = color;
         this.ctime = ctime;
     }
