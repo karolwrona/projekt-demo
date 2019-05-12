@@ -11,7 +11,9 @@
         <tr th:each="colorsRow : ${colors}">
             <td width="100px" height="100px"
                 th:each="color: ${colorsRow}"
-                th:attr="bgcolor=${color}" />
+                th:attr="bgcolor=${color}"
+                th:onclick="'location.href= \'' + @{/select/{c}(c=${color})} + ' \' '"
+            />
             </td>
 
 
