@@ -8,10 +8,13 @@
     <h1 th:text = "${title}"></h1>
 
     <table>
-        <tr bgcolor="#dc143c">
-            <td width="100px" height="100px">cos</td>
-            <td width="100px" height="100px">cos1</td>
-            <td width="100px" height="100px">cos2</td>
+        <tr th:each="colorsRow : ${colors}">
+            <td width="100px" height="100px"
+                th:each="color: ${colorsRow}"
+                th:attr="bgcolor=${color}" />
+            </td>
+
+
         </tr>
     </table>
 
