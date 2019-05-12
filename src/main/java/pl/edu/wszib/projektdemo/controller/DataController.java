@@ -10,7 +10,7 @@ import pl.edu.wszib.projektdemo.domain.SelectedColor;
 
 @Controller
 public class DataController {
-    @Value("${app.header.select_color}")
+    @Value("${app.header.data}")
     private String title;
     @Autowired
     SelectedColorDao selectedColorDao;

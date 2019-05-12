@@ -40,9 +40,6 @@ public class SelectedColorController {
         model.addAttribute("colors", colors);
         return"select";
     }
-    @GetMapping("/stat")
-    public String statPage(){
-        return"stat";
-    }
+
 
 }
